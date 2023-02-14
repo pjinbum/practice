@@ -1,0 +1,145 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+li{
+  list-style: none;
+}
+
+a{
+  text-decoration: none;
+}
+
+header{
+  display: flex;
+  background-color: black;
+  height: 100px;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 3px solid #fff;
+}
+
+header img{
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin: 40px
+}
+
+.main-logo img{
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+}
+
+header img:hover aside{
+  display: block;
+}
+
+main{
+  width: 100vw;
+  height: 100vh;
+  background-color: black;
+  display: flex;
+}
+
+main div:nth-child(1){
+  width: 30%;
+  height: 100%;
+  background-color: aliceblue;
+}
+
+main div:nth-child(2){
+  width: 70%;
+  height: 100%;
+  background-color: rgb(99, 167, 226);
+}
+
+.main-right img{
+  width: 100%;
+  height: 100%;
+  transition: all 400ms ease-in-out;
+ 
+  
+}
+
+.main-right img:hover{
+ width: 50%;
+ /* animation-name: move;
+ animation-duration: 3s;
+ animation-iteration-count: infinite;
+ animation-fill-mode: forwards; */
+}
+
+aside::before {
+  content: '';
+  position:absolute; 
+  top:-5px;
+  right: 15px;
+  width: 10px;
+  height: 10px;
+  background-color: #fff;
+  display: block;
+}
+
+aside{
+  position: absolute;
+  top :95px;
+  right: 40px;
+  width: 180px;
+  height: 482px;
+  background-color: #fff;
+  border-radius: 5px;
+  display: none;
+}
+
+aside:hover{
+  transform: translateY(-2px);
+  transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+aside li:hover{
+  background-color: blue;
+  color: #fff;
+  cursor: pointer;
+  opacity: .5;
+}
+
+aside ul>li{
+  margin: 4px 8px;
+  padding: 3.5px 8px;
+}
+
+aside input[type=text]{
+  width: 90%;
+  height: 30px;
+}
+
+.aside.active {
+  display: block;
+}
+
+
+.aside2{
+ animation-name: move;
+ animation-duration: 2s;
+ /* animation-iteration-count: infinite; */
+ animation-fill-mode: forwards; 
+ animation-timing-function: linear;
+ background-color: aqua;
+ opacity: .5;
+}
+
+
+
+@keyframes move {
+  from{
+    width: 0;
+  }
+  100%{
+    width: 95vw;
+  }
+}
+

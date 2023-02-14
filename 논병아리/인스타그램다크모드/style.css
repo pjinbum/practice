@@ -1,0 +1,166 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.wrapper{
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(128, 128, 128, .1);
+}
+
+.wrapper.on{
+  background-color: black;
+}
+
+
+.center>div:nth-child(1){
+  position: relative;
+  width: 400px;
+  height: 500px;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border: 1px solid rgba(182, 181, 181,.8);
+}
+
+.center>div:nth-child(1).on{
+  background-color: black;
+}
+
+.logo img{  
+  display: block;
+  width: 70%;
+  object-fit: contain;
+  margin: 0 auto;
+  /* background-image: url(./image/logo-light.png); */
+  
+
+}
+
+/* .logo img.on{
+  content: attr('src' ,'./image/logo-light.png');
+} */
+
+.textmo{
+  width: 70%;
+  margin: 0 auto;
+}
+
+.textmo div{
+  margin: 20px 0;
+}
+
+
+input[type=text]{
+  width: 100%;
+  height: 40px;
+  justify-content: center;
+
+
+}
+
+input[placeholder]{
+  
+}
+
+.btn-log{
+  width: 100%;
+  height: 30px;
+  background-color: rgba(135, 206, 235, .8);
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+}
+
+.txt1{
+  text-align: center;
+  color: gray;
+  font-weight: 700;
+}
+
+.txt2{
+  text-align: center;
+  font-weight: 700;
+  color: rgb(34, 34, 143);
+}
+
+.txt2 img{
+  width: 15px;
+  height: 15px;
+}
+
+.txt3{
+  text-align: center;
+  color: rgb(48, 149, 156);
+  font-size: 12px;
+  font-weight: 700;
+}
+
+
+
+
+ .center>div:nth-child(2){
+  margin-top: 10px;
+  width: 400px;
+  height: 100px;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 700;
+  border: 1px solid rgba(182, 181, 181,.8);
+
+}
+
+.center>div:nth-child(2).on{
+  color: #fff;
+  background-color: black;
+}
+
+.center>div:nth-child(2) a{
+  color: rgb(71, 174, 233);
+  text-decoration: none;
+}
+ .center>div:nth-child(3){
+  margin-top: 20px;
+  width: 400px;
+  height: 100px;
+  color: gray;
+  text-align: center;
+ }
+
+ .center>div:nth-child(3) img{
+  margin-top: 15px;
+  width: 150px;
+  height: 40px;
+ }
+
+
+  .center>div:nth-child(4){ 
+  
+  width: 800px;  
+  height: 100px;
+  margin: 0px -200px;
+  margin-top: 70px;
+  
+  text-align: center;
+  
+}
+
+.center>div:nth-child(4) span{
+  margin: 2px;
+  color: gray
+
+}
+
+.center>div:nth-child(4) p{
+  margin-top: 20px;
+  color: gray
+}
+
